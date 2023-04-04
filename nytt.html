@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <link rel="stylesheet" type="text/css" href="body.css">
+    <title>Math Game</title>
+    <style>
+      body {
+        background-color: orange;
+        font-family: 'New Times Roman', serif;
+        color: black;
+      }
+    </style>
+  </head>
+     <script src="cool.js"></script>
+  <body>
+    <h1>Math Game</h1>
+    <p id="question"></p>
+    <input type="text" id="answer">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+    <script>
+      // generate random math question and display it on the page
+      function generateQuestion() {
+        // your code to generate a question
+        // replace the text inside the question element with the generated question
+        document.getElementById("question").textContent = question;
+      }
+      
+      // check if the answer is correct and display the result
+      function checkAnswer() {
+        // your code to check the answer
+        // replace the text inside the result element with the appropriate message
+        document.getElementById("result").textContent = result;
+      }
+      
+      // initialize the game
+      function init() {
+        // your code to set up the game (e.g. level, score)
+        generateQuestion();
+      }
+      
+      init(); // start the game when the page loads
+    </script>
+  </body>
+</html>
